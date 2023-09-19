@@ -67,6 +67,7 @@ body{
     left: 0;
     height: 100%;
     width: 100%;
+    
 }
 
 #form {
@@ -74,11 +75,15 @@ body{
     width: 80%; 
     margin: 0 auto;
     padding: 20px;
+
     top : -600px ;
     right: -500px;;
     background-color: #0a0a23;
     color: black;
     
+}
+section #form{
+    overflow:scroll;
 }
 #section-1 { 
     border-radius: 15px;
@@ -113,17 +118,13 @@ body{
 
 }
 #section-1 input::placeholder{
-    position: absolute;
-    left: 5%;
+    padding-left: 15px;
 }
 
 #section-1 #age{ 
     width: 19%;
 }
-#section-1 #age::placeholder{
-    position: relative;
-    left: 15%;
-}
+
 
 @media (400px <= width <= 600px){
     #form{ 
@@ -134,18 +135,60 @@ body{
     #section-1 { 
         width: 90%;
     }
+    #section-1 input {
+        width: 70%;
+    }
+}
+#radio-buttons { 
+    display: flex;
+    flex-direction:row;
+    width: 85%;
+    font-family: "Roboto Mono";
+}
+#radio-buttons label { 
+    top: -15px;
+}
+#radio-buttons input{
+    left : 15px;
+    top :22px; 
+}
+#radio-buttons #radio-2{
+    left: -31px;
+}
+#radio-buttons #radio-3{
+    left: -4px;
 }
 
 
+#section-2{ 
+    border-radius: 15px;
+    background-color:#1b1b32;
+    color : white ;
+    padding : 20px;
+    width : 59.7%;
+    right : -300px; 
+    top : 15px;
+    left: -1px;
+    margin: 15px;
+    height : auto;
+    overflow: auto;
+}
 
-
-
-
-
-
-
-
-
+#role{ 
+    background-color: #dfdfe2;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width : 20%;
+    margin: -5px;
+}
+@media (400px <= width <= 600px) { 
+    #section-2  { 
+        width: 87%;
+    }
+}
 
 footer div { 
     display: flex;
@@ -174,7 +217,7 @@ footer{
     left: 0;
     bottom: -150px;
     width: 100%;
-    overflow:scroll;
+
     height: 250px;
     position:absolute;
     background-color: #f5f6f7;
