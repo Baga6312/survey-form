@@ -69,9 +69,81 @@ body{
     width: 100%;
 }
 
-#form { 
+#form {
+    position: relative;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 20px;
+    top : -600px ;
+    right: -500px;;
     background-color: #0a0a23;
+    color: black;
+    
 }
+#section-1 { 
+    border-radius: 15px;
+    background-color:#1b1b32;
+    color : white ;
+    padding : 15px;
+    width : 60%;
+    right : -300px; 
+    top : 15px;
+    left: 10px;
+    height : auto;
+    overflow: auto;
+}
+
+
+#section-1 input { 
+    background-color: #dfdfe2;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width : 300px;
+    margin: -5px;
+    top: -15px;
+    right: -100px;
+}
+
+#section-1 label { 
+    font-family: 'Roboto Mono';
+    padding: 10px;
+
+}
+#section-1 input::placeholder{
+    position: absolute;
+    left: 5%;
+}
+
+#section-1 #age{ 
+    width: 19%;
+}
+#section-1 #age::placeholder{
+    position: relative;
+    left: 15%;
+}
+
+@media (400px <= width <= 600px){
+    #form{ 
+        right:0px;
+        border-radius: 15px;
+        top : -520px;
+    }
+    #section-1 { 
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
