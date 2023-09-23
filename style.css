@@ -25,16 +25,57 @@
     font-family: "Roboto Mono";
 }
 
-
+@keyframes fadeInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+@keyframes fadeInFrombottom {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeInFromTop {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 #fcc-img{
     left: 180px;
     width: 350px;
     height: 50px;
+    animation: fadeInFromLeft 0.6s ease-out;
 
 }
 
 
 #survey-form { 
+    animation: fadeInFromLeft 0.8s ease-out;
     position:relative;
     color: white;
     width: 50%;
@@ -48,26 +89,37 @@
 
 @media (200px <= width <= 600px) {
     #survey-form{
+        animation: fadeInFromTop 0.6s ease-out;
+
         text-align: center;
         width: 350px;
         height: 250px;
         font-size: 15px;
-        left :-20px ;
+        left :-0px ;
         top : -10px;
     }
     #fcc-img{ 
+        animation: fadeInFromTop 0.6s ease-out;
         align-items: center;
         width: 90%;
         height : 90%;
         top : -20px ;
-        left: auto ; 
+        left: 30px ; 
     }
 }
  
 body{
+   
     background-image: url('https://c1.wallpaperflare.com/preview/311/34/429/colleague-unsplash-team-group-work.jpg');
 }
 
+#filter { 
+    background-color:#0a0a23;
+    position: fixed;
+    padding: 850px;
+    opacity: 0.7;
+    margin-top: -150px;
+}
 
 
 #form1 #form {
@@ -122,8 +174,15 @@ body{
 }
 
 
+  
+  #form {
+    animation: fadeInFromRight 0.6s ease-out;
+  }
+
 @media (400px <= width <= 600px){
     #form{ 
+        animation: fadeInFrombottom 0.6s ease-out;
+
         border-radius: 15px;
         padding-right: 270px;
         margin-left: -345px;
@@ -197,7 +256,7 @@ ul {
     top : 31px;
     width: 560px;
     /* right : -58px; */
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     left: 5px;
     height: 30%;
 
@@ -267,6 +326,7 @@ footer p {
     background-color: #ffffff;
 }
 
+  
 footer{
     top:740px;
     display: flex;
