@@ -80,7 +80,7 @@ body{
 
     background-color: #0a0a23;
     color: black;
-    height: 670px;
+    height: 850px;
     overflow: scroll;
     width: 45%;
     top:-90px;
@@ -131,13 +131,13 @@ body{
 @media (400px <= width <= 600px){
     #form{ 
         border-radius: 15px;
-        padding-right: 285px;
-        margin-left: -350px;
+        padding-right: 270px;
+        margin-left: -345px;
         margin-top: 150px;
     }
     #section-1 { 
-        margin-right: -260px;
-        padding-right: 250px;
+        width: 465px;
+        left: 18px;
     }
     #section-1 input {
         width: 70%;
@@ -145,19 +145,7 @@ body{
 }
 
 
-#section-2{ 
-    border-radius: 15px;
-    background-color:#1b1b32;
-    color : white ;
-    padding : 20px;
-    width : 86%;
-    right : -80px; 
-    top : 30px;
-    left: 9px;
-    margin: 15px;
-    height : auto;
-    overflow: auto;
-}
+
 [type="radio"]{
     width : 30px;
 }
@@ -184,12 +172,24 @@ ul {
     width : 20%;
     margin: -5px;
 }
-
+#section-2{ 
+    border-radius: 15px;
+    background-color:#1b1b32;
+    color : white ;
+    padding : 20px;
+    width : 86%;
+    right : -80px; 
+    top : 30px;
+    left: 9px;
+    margin: 15px;
+    height : auto;
+    overflow: auto;
+}
 
 @media (400px <= width <= 600px) { 
-    form #section-2  { 
-        width: 430px; 
-        left: 10px;
+    #section-2  {
+        width: 456px;
+        left: 1px; 
     }
 }
 
@@ -198,13 +198,14 @@ ul {
    
     border-radius: 15px;
     background-color: #1b1b32;
-    top: 15px ;
+
     color :white;
     top : 31px;
     width: 560px;
     /* right : -58px; */
+    margin-bottom: 50px;
     left: 5px;
-    height: 37%;
+    height: 30%;
 
 }
 
@@ -232,15 +233,13 @@ ul {
     padding: 10px;
     border-radius: 30px;
     border:none;
-    right:-205px;
+    right:-185px;
 }
 
 @media (400px <= width <= 600px) { 
     #section-3 { 
-        width: 480px;
-        height: 50%;
-        left : 25px;
-        margin-bottom: 100px;
+        width: 493px;
+        left: 20px;
     }
     #section-3 #text{
         right : -1px; 
@@ -275,17 +274,20 @@ footer p {
 }
 
 footer{
-    top:580px;
+    top:740px;
     display: flex;
     height: 75%;
     flex-direction:column;
     background-color: #f5f6f7;
 }
 
-@media (300px<= height <=600px){ 
+@media (300px <= width <= 600px){ 
     footer { 
-        top: 760px;
+        top:900px;
     }
+}
+@media (300px<= height <=600px){ 
+
     footer p { 
         width: auto;
         top: 50px;
