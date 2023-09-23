@@ -70,12 +70,6 @@ body{
 
 
 
-@media(400px<=width<=600px){ 
-    body { 
-    }
-}
-
-
 #form1 #form {
 
     background-color: #0a0a23;
