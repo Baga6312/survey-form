@@ -187,8 +187,9 @@ ul {
 
 
 @media (400px <= width <= 600px) { 
-    #section-2  { 
-        width: 87%;
+    form #section-2  { 
+        width: 430px; 
+        left: 10px;
     }
 }
 
@@ -236,8 +237,9 @@ ul {
 
 @media (400px <= width <= 600px) { 
     #section-3 { 
-        width: 96%;
+        width: 480px;
         height: 50%;
+        left : 25px;
         margin-bottom: 100px;
     }
     #section-3 #text{
@@ -245,7 +247,7 @@ ul {
         width: 92%;
     }
     #section-3 #submit { 
-        right:-130px;
+        right:-180px;
     }
 }
 
@@ -281,7 +283,9 @@ footer{
 }
 
 @media (300px<= height <=600px){ 
-
+    footer { 
+        top: 760px;
+    }
     footer p { 
         width: auto;
         top: 50px;
