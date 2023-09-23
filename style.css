@@ -11,21 +11,25 @@
 
 @media (400px <= width <= 600px) { 
     #background {
-        height :100%;
-        margin-top: 0px;
+        margin-top: 10px;
         top: 30px;
     }
 }
 
 *{    
+    margin: 0 auto;
+    padding :0 ; 
     background-size: cover ;
     position:relative;
+    height : 50%; 
     font-family: "Roboto Mono";
 }
 
+
 #fcc-img{
-    left: 60px;
-    width: 500px;
+    left: 180px;
+    width: 350px;
+    height: 50px;
 
 }
 
@@ -35,7 +39,7 @@
     color: white;
     width: 50%;
    
-    left:250px;
+    left:-50px;
     right: 230px;
 
     font-size:30px;
@@ -45,21 +49,22 @@
 @media (200px <= width <= 600px) {
     #survey-form{
         text-align: center;
-        width: 400px;
+        width: 350px;
+        height: 250px;
         font-size: 15px;
-        left :100px ;
-        top : 200px;
+        left :-20px ;
+        top : -10px;
     }
     #fcc-img{ 
         align-items: center;
-        width: 220px;
-        top : 350px ;
-        left: 180px;
+        width: 90%;
+        height : 90%;
+        top : -20px ;
+        left: auto ; 
     }
 }
  
 body{
-
     background-image: url('https://c1.wallpaperflare.com/preview/311/34/429/colleague-unsplash-team-group-work.jpg');
 }
 
@@ -71,27 +76,26 @@ body{
 }
 
 
-#form {
+#form1 #form {
+
     background-color: #0a0a23;
     color: black;
-    width: 50%;
-    right : -850px;
-    top : -150px;
-}
-section #form{
+    height: 670px;
     overflow: scroll;
-  
+    width: 45%;
+    top:-90px;
+    right: -368px;
+   
 }
-
 #section-1 { 
     border-radius: 15px;
     background-color:#1b1b32;
     color : white ;
     padding : 15px;
-    width : 87%;
-    right : -350px; 
-    top : 15px;
-    left: 10px;
+    width : 89%;
+    right : -450px; 
+    top : 30px;
+    left: -0px;
     height : auto;
     overflow: auto;
 }
@@ -126,12 +130,14 @@ section #form{
 
 @media (400px <= width <= 600px){
     #form{ 
-        right:0px;
         border-radius: 15px;
-        top : 100px;
+        padding-right: 285px;
+        margin-left: -350px;
+        margin-top: 150px;
     }
     #section-1 { 
-        width: 90%;
+        margin-right: -260px;
+        padding-right: 250px;
     }
     #section-1 input {
         width: 70%;
@@ -146,8 +152,8 @@ section #form{
     padding : 20px;
     width : 86%;
     right : -80px; 
-    top : 15px;
-    left: -5px;
+    top : 30px;
+    left: 9px;
     margin: 15px;
     height : auto;
     overflow: auto;
@@ -158,11 +164,12 @@ section #form{
 
 [type="checkbox"]{ 
     width: 30px;
+    right: 5px;
     margin-bottom: 15px;
 }
 ul { 
     list-style: none;
-    right: 50px;
+    right: -0px;
 }
 
 
@@ -192,10 +199,11 @@ ul {
     background-color: #1b1b32;
     top: 15px ;
     color :white;
-
-    width: 675px;
-    right: -15px;
-    height: 45%;
+    top : 31px;
+    width: 560px;
+    /* right : -58px; */
+    left: 5px;
+    height: 37%;
 
 }
 
@@ -217,13 +225,13 @@ ul {
     border-radius: 15px;
 }
 #section-3 #submit { 
-    width: 40%;
-    height: 15%;
+    width: 30%;
+    height: 30%;
     margin-bottom: 25px;
     padding: 10px;
     border-radius: 30px;
     border:none;
-    right:-265px;
+    right:-205px;
 }
 
 @media (400px <= width <= 600px) { 
@@ -257,7 +265,7 @@ footer div i  {
     margin : 15px;   
 }
 footer p {
-    top: 40px;
+    top: 80px;
     height: 20%;
     text-align: center; 
     color: #8e8e8e;
@@ -265,8 +273,9 @@ footer p {
 }
 
 footer{
-    top:-150px;
+    top:580px;
     display: flex;
+    height: 75%;
     flex-direction:column;
     background-color: #f5f6f7;
 }
