@@ -74,7 +74,7 @@
 }
 
 
-#survey-form { 
+#title { 
     animation: fadeInFromLeft 0.8s ease-out;
     position:relative;
     color: white;
@@ -88,7 +88,7 @@
 }
 
 @media (200px <= width <= 600px) {
-    #survey-form{
+    #title{
         animation: fadeInFromTop 0.6s ease-out;
 
         text-align: center;
@@ -122,7 +122,7 @@ body{
 }
 
 
-#form1 #form {
+#survey-form #form {
 
     background-color: #0a0a23;
     color: black;
@@ -215,7 +215,7 @@ ul {
 
 
 
-#role{ 
+#dropdown{ 
     background-color: #dfdfe2;
     border-radius: 15px;
     padding: 5px;
